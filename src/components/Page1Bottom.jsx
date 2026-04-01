@@ -12,12 +12,8 @@ const Page1Bottom = () => {
         <h3 className="text-1xl text-gray-400"> BESPOKE FREELANCE</h3>
       </div>
       <div>
-        <img
-          className="mb-3 h-20 w-20 rounded-full"
-          src={goldenCosmos}
-          alt=""
-        />
         <img className="  h-20 w-20 rounded-full" src={redCosmos} alt="" />
+        <img className=" h-20 w-20 rounded-full" src={goldenCosmos} alt="" />
       </div>
     </div>
   );

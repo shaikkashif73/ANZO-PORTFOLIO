@@ -4,8 +4,10 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <>
-      <Header />
-      <Pages1 />
+      <div id="main">
+        {/* <Header /> */}
+        <Pages1 />
+      </div>
     </>
   );
 };

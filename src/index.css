@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+#tiltDiv {
+  width: fit-content;
+}
+
+#page1-in {
+  position: relative;
+  perspective: 900px;
+}
