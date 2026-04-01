@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-// import TiltText from "../components/TiltText";
+import TiltText from "../components/TiltText";
 import Page1Bottom from "../components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -30,8 +30,8 @@ const Pages1 = () => {
     function () {
       gsap.to(tiltRef.current, {
         transform: `rotateX(${yVal}deg)   rotateY(${xVal}deg)`,
-        duration: 1,
-        ease: "elastic.out(1,0.6)",
+        duration: 2,
+        ease: "power4.out",
       });
     },
     [xVal, yVal],
@@ -53,17 +53,7 @@ const Pages1 = () => {
           src="https://i.pinimg.com/736x/3a/13/a8/3a13a87a7792339645429286ee3066a0.jpg"
           alt=""
         />
-        <div id="tiltDiv" ref={tiltRef} className="mt-27">
-          <h1 className="text-[4vw] leading-[4vw]  text-white ">
-            Iam <span className="text-black font-bold ">DARK MODE</span>™
-          </h1>
-          <h1 className="text-[9vw]  leading-[6vw]  text-white font-extrabold">
-            DESIGNER
-          </h1>
-          <h1 className="text-[4vw]  leading-[6vw]  text-shadow-mist-900 font-bold ">
-            TO HIRE
-          </h1>
-        </div>
+        <TiltText abc={tiltRef} />
         <Page1Bottom />
       </div>
     </div>
